@@ -52,6 +52,45 @@ namespace Senai.InLock.WebApi.Repositorio
             }
         }
 
+        public List<JogoDomain> BuscarPorIdEstudio(int id)
+        {
+            List<JogoDomain> listaJogos = new List<JogoDomain>();
+
+            using (SqlConnection con = new SqlConnection(stringConexao))
+            {
+                string querySelectAll = "SELECT * FROM jogos WHERE idEstudio = @id;";
+
+                con.Open();
+
+                SqlDataReader rdr;
+
+                using (SqlCommand cmd = new SqlCommand(querySelectAll, con))
+                {
+                    cmd.Parameters.AddWithValue("@id", id);
+
+                    rdr = cmd.ExecuteReader();
+
+                    while (rdr.Read())
+                    {
+                        JogoDomain jogo = new JogoDomain()
+                        {
+                            IdJogo = Convert.ToInt32(rdr["idJogo"]),
+                            NomeJogo = rdr["nomeJogo"].ToString(),
+                            Descricao = rdr["descricao"].ToString(),
+                            DataLancamento = Convert.ToDateTime(rdr["dataLancamento"]),
+                            Valor = Convert.ToDouble(rdr["valor"]),
+                            IdEstudio = Convert.ToInt32(rdr["idEstudio"])
+
+                        };
+
+                        listaJogos.Add(jogo);
+                    }
+                }
+
+                return listaJogos;
+            }
+        }
+
         public void Cadastrar(JogoDomain novoJogo)
         {
             using(SqlConnection con = new SqlConnection(stringConexao))

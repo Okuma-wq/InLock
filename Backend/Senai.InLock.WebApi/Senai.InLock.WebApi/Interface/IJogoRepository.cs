@@ -12,6 +12,8 @@ namespace Senai.InLock.WebApi.Interface
 
         JogoDomain BuscarPorId(int id);
 
+        List<JogoDomain> BuscarPorIdEstudio(int id);
+
         void Cadastrar(JogoDomain novoJogo);
 
         void Deletar(int id);
