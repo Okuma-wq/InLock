@@ -16,7 +16,7 @@ namespace Senai.InLock.WebApi.Repositorio
         {
             using(SqlConnection con = new SqlConnection(stringConexao))
             {
-                string querySelect = "SELECT * FROM estudios WHERE idEstudio = @id";
+                string querySelect = "SELECT * FROM estudios WHERE idEstudio = @id;";
 
                 con.Open();
 
@@ -50,7 +50,7 @@ namespace Senai.InLock.WebApi.Repositorio
 
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
-                string querySelectAll = "SELECT * FROM estudios";
+                string querySelectAll = "SELECT * FROM estudios;";
 
                 con.Open();
 

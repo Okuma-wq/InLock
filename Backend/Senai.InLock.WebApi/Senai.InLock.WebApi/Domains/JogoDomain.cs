@@ -20,7 +20,7 @@ namespace Senai.InLock.WebApi.Domains
         public DateTime DataLancamento { get; set; }
 
         [Required(ErrorMessage = "O valor do jogo é obrigatório")]
-        public double Valor { get; set; }
+        public double? Valor { get; set; }
 
         [Required(ErrorMessage = "O id do estudio é obrigatório")]
         public int IdEstudio { get; set; }
