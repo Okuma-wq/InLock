@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Senai.InLock.WebApi.Domains;
 using Senai.InLock.WebApi.Interface;
 using Senai.InLock.WebApi.Repositorio;
@@ -22,6 +23,7 @@ namespace Senai.InLock.WebApi.Controllers
             _tipoUsuarioRepository = new TipoUsuarioRepository();
         }
 
+        [Authorize(Roles = "1")]
         [HttpGet]
         public IActionResult Get()
         {

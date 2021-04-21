@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Senai.InLock.WebApi.Domains;
 using Senai.InLock.WebApi.Interface;
 using Senai.InLock.WebApi.Repositorio;
@@ -22,6 +23,7 @@ namespace Senai.InLock.WebApi.Controllers
             _estudioRepository = new EstudioRepository();
         }
 
+        [Authorize]
         [HttpGet]
         public IActionResult Get()
         {
@@ -30,6 +32,7 @@ namespace Senai.InLock.WebApi.Controllers
             return Ok(listaEstudios);
         }
 
+        [Authorize]
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {

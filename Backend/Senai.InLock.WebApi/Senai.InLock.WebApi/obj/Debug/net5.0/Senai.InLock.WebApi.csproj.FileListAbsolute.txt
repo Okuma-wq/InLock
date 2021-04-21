@@ -33,3 +33,10 @@ C:\Users\pedro\Desktop\Repositório\sprint-2-back-end\exercicios\inlock_games_ta
 C:\Users\pedro\Desktop\Repositório\sprint-2-back-end\exercicios\inlock_games_tarde\Backend\Senai.InLock.WebApi\Senai.InLock.WebApi\obj\Debug\net5.0\ref\Senai.InLock.WebApi.dll
 C:\Users\pedro\Desktop\Repositório\sprint-2-back-end\exercicios\inlock_games_tarde\Backend\Senai.InLock.WebApi\Senai.InLock.WebApi\obj\Debug\net5.0\Senai.InLock.WebApi.pdb
 C:\Users\pedro\Desktop\Repositório\sprint-2-back-end\exercicios\inlock_games_tarde\Backend\Senai.InLock.WebApi\Senai.InLock.WebApi\obj\Debug\net5.0\Senai.InLock.WebApi.genruntimeconfig.cache
+C:\Users\pedro\Desktop\Repositório\sprint-2-back-end\exercicios\inlock_games_tarde\Backend\Senai.InLock.WebApi\Senai.InLock.WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\pedro\Desktop\Repositório\sprint-2-back-end\exercicios\inlock_games_tarde\Backend\Senai.InLock.WebApi\Senai.InLock.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\pedro\Desktop\Repositório\sprint-2-back-end\exercicios\inlock_games_tarde\Backend\Senai.InLock.WebApi\Senai.InLock.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\pedro\Desktop\Repositório\sprint-2-back-end\exercicios\inlock_games_tarde\Backend\Senai.InLock.WebApi\Senai.InLock.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\pedro\Desktop\Repositório\sprint-2-back-end\exercicios\inlock_games_tarde\Backend\Senai.InLock.WebApi\Senai.InLock.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\pedro\Desktop\Repositório\sprint-2-back-end\exercicios\inlock_games_tarde\Backend\Senai.InLock.WebApi\Senai.InLock.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\pedro\Desktop\Repositório\sprint-2-back-end\exercicios\inlock_games_tarde\Backend\Senai.InLock.WebApi\Senai.InLock.WebApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
